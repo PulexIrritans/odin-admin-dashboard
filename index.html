@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" defer />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="javascript.js"></script>
   </head>
   <body>
     <header>
-      <div>
-        <label for="search">O</label>
-        <input type="search" name="search" id="search" />
-        <span>Alert</span>
-        <img src="" alt="Profile picture small" />
-        <h2>Morgan Oakley</h2>
+      <div class="search-line">
+        <div class="search-left">
+          <label for="search"><img src="icons/magnify.png" alt=""></label>
+          <input type="search" name="search" id="search" />
+        </div>
+        <div class="search-right">
+          <span><img src="icons/bell-ring-outline.png" alt=""></span>
+          <img class="small-profile" src="icons/Avatar2.png" alt="Profile picture small" />
+          <h2>Morgan Oakley</h2>
+        </div>
       </div>
-      <div>
-        <img src="" alt="Profile picture big" />
-        <p>Hi there,</p>
-        <h1>Morgan Oakley (@morgan]</h1>
+      <div class="profile-line">
+        <div class="left-profile">
+            <img class="big-profile" src="icons/Avatar2.png" alt="Profile picture big" />
+            <div>
+                <p>Hi there,</p> 
+                <h1>Morgan Oakley (@morgan)</h1>
+            </div>  
+        </div>
         <ul>
           <li>New</li>
           <li>Upload</li>
@@ -29,84 +40,118 @@
       </div>
     </header>
     <aside>
-      <h1>Dashboard</h1>
+      <h1>
+       <img src="icons/view-dashboard.png" alt="">
+        <span>Dashboard</span>
+      </h1>
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+          <li><img src="icons/home.png" alt=""></li>
+        <li id="list">Home</li>
+        <li> <img src="icons/card-account-details-outline.png" alt=""></li>
+        <li id="list">Profile</li>
+        <li><img src="icons/message.png" alt=""></li>
+        <li id="list">Messages</li>
+        <li> <img src="icons/history.png" alt=""></li>
+        <li id="list">History</li>
+        <li><img src="icons/file-multiple-outline.png" alt=""></li>
+        <li id="list">Tasks</li>
+        <li><img src="icons/account-group.png" alt=""></li>
+        <li id="list">Communities</li>
       </ul>
       <ul>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+          <li><img src="icons/cog.png" alt=""></li>
+        <li id="list">Settings</li>
+        <li><img src="icons/help-circle.png" alt=""></li>
+        <li id="list">Support</li>
+        <li><img src="icons/shield-check.png" alt=""></li>
+        <li id="list">Privacy</li> 
       </ul>
+        
     </aside>
     <main>
-      <div>
+      <div class="projects">
         <h2>Your Projects</h2>
-        <article>
-          <h3>Super Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            aliquid iste ad dolorum sed dolore delectus, corporis voluptate
-            inventore doloribus sunt quas ea explicabo unde ducimus in, vero
-          </p>
-          <span></span><span></span><span></span>
-        </article>
-        <article>
-          <h3>Less Cool Project</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            temporibus tempora hic aut debitis accusamus, tempore et illum
-            voluptas nemo sequi vero, consequatur nihil quasi architecto numquam
-            esse, atque soluta?
-          </p>
-          <span></span><span></span><span></span>
-        </article>
-        <article>
-          <h3>Impossible App</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sint
-            cupiditate odit accusantium facilis magnam cum enim ipsa
-            perspiciatis reiciendis consequatur a, fugiat i
-          </p>
-          <span></span><span></span><span></span>
-        </article>
-        <article>
-          <h3>Easy Peasy App</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat
-            quas cum maiores dicta commodi libero repellendus impedit nobis,
-            expedita unde sint explicabo atque voluptate odio porro facere quam
-            earum!
-          </p>
-          <span></span><span></span><span></span>
-        </article>
-        <article>
-          <h3>Ad Blocker</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error
-            ab reprehenderit deleniti voluptatum id enim possimus aut modi totam
-            n
-          </p>
-          <span></span><span></span><span></span>
-        </article>
-        <article>
-          <h3>Money Maker</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim totam
-            atque laudantium quam, aut itaque eos ut est! Optio consequuntur
-            mollitia consequatur iusto porro! Officia a excepturi pariatur
-            dolores atque.
-          </p>
-          <span></span><span></span><span></span>
-        </article>
+        <div class="articles">
+          <article>
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              aliquid iste ad dolorum sed dolore delectus, corporis voluptate
+              inventore doloribus sunt quas ea explicabo unde ducimus in, vero
+            </p>
+            <div>
+                <img src="icons/star-plus-outline.png" alt="">
+                <img src="icons/eye-plus-outline.png" alt="">
+                <img src="icons/source-branch.png" alt="">
+                </div>          </article>
+          <article>
+            <h3>Less Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              temporibus tempora hic aut debitis accusamus, tempore et illum
+              voluptas nemo sequi vero, consequatur nihil quasi architecto
+              numquam esse, atque soluta?
+            </p>
+            <div>
+                <img src="icons/star-plus-outline.png" alt="">
+                <img src="icons/eye-plus-outline.png" alt="">
+                <img src="icons/source-branch.png" alt="">
+                </div>          </article>
+          <article>
+            <h3>Impossible App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sint
+              cupiditate odit accusantium facilis magnam cum enim ipsa
+              perspiciatis reiciendis consequatur a, fugiat i
+            </p>
+            <div>
+                <img src="icons/star-plus-outline.png" alt="">
+                <img src="icons/eye-plus-outline.png" alt="">
+                <img src="icons/source-branch.png" alt="">
+                </div>          </article>
+          <article>
+            <h3>Easy Peasy App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              repellat quas cum maiores dicta commodi libero repellendus impedit
+              nobis, expedita unde sint explicabo atque voluptate odio porro
+              facere quam earum!
+            </p>
+            <div>
+                <img src="icons/star-plus-outline.png" alt="">
+                <img src="icons/eye-plus-outline.png" alt="">
+                <img src="icons/source-branch.png" alt="">
+                </div>          </article>
+          <article>
+            <h3>Ad Blocker</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error
+              ab reprehenderit deleniti voluptatum id enim possimus aut modi
+              totam n
+            </p>
+            <div>
+                <img src="icons/star-plus-outline.png" alt="">
+                <img src="icons/eye-plus-outline.png" alt="">
+                <img src="icons/source-branch.png" alt="">
+                </div>          </article>
+          <article>
+            <h3>Money Maker</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              totam atque laudantium quam, aut itaque eos ut est! Optio
+              consequuntur mollitia consequatur iusto porro! Officia a excepturi
+              pariatur dolores atque.
+            </p>
+            <div>
+            <img src="icons/star-plus-outline.png" alt="">
+            <img src="icons/eye-plus-outline.png" alt="">
+            <img src="icons/source-branch.png" alt="">
+            </div>
+          </article>
+        </div>
       </div>
-      <div>
-        <h2>Announcements</h2>
+      <div class="announcements">
+          <h2>Announcements</h2>
         <ul>
           <li>
             <h3>Site Maintenance</h3>
@@ -133,22 +178,31 @@
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Trending</h2>
+      <div class="trend">
+      <h2>Trending</h2>
         <ul>
-          <li>@tegan<br />World Peace Builder</li>
-          <li>@morgan<br />Super Cool Project</li>
-          <li>@kendall<br />Life Changing App</li>
-          <li>@alex<br />No Traffic Maker</li>
+            <li><img src="icons/Avatar1.png" alt=""></li>
+          <li>@tegan<br/><span class="grey">World Peace Builder</span></li>
+          <li><img src="icons/Avatar2.png" alt=""></li>
+          <li>@morgan<br/><span class="grey">Super Cool Project</span></li>
+          <li><img src="icons/Avatar3.png" alt=""></li>
+          <li>@kendall<br/><span class="grey">Life Changing App</span></li>
+          <li><img src="icons/Avatar4.png" alt=""></li>
+          <li>@alex<br/><span class="grey">No Traffic Maker</span></li>
         </ul>
+      </div> 
       </div>
+     
     </main>
     <footer>
       Built by
       <a href="http://" target="_blank" rel="noopener noreferrer"
         >PulexIrritans</a
       >
-      inspired by <a href="http://" target="_blank" rel="noopener noreferrer">The Odin Project</a>
+      inspired by
+      <a href="http://" target="_blank" rel="noopener noreferrer"
+        >The Odin Project</a
+      >
     </footer>
   </body>
 </html>
